@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+button{
+	
+	height: 30px;
+	width: 60px;
+	background-color:  #04AA6D;
+	margin: 1px;
+	color: white;
+}
+.btn{
+	float: right;
+	height: 30px;
+	width: 60px;
+	background-color:  #04AA6D;
+	margin: 7px;
+	color: white;
+}

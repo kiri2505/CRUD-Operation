@@ -1,0 +1,120 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>
+	Student Register
+</h1>
+<hr>
+<form action="AddStudentServlet" method="get" >
+	ID : <input type="text" name="id"><br>
+	Name : <input type="text" name="uname"><br>
+	Marks : <input type="text" name="marks"><br>
+	<input type="submit" value="Save">
+</form>
+
+<h1>
+	Student Update
+</h1>
+<hr>
+<form action="UpdateStudentServlet" method="get" >
+	ID : <input type="text" name="id"><br>
+	Name : <input type="text" name="uname"><br>
+	Marks : <input type="text" name="marks"><br>
+	<input type="submit" value="Update">
+</form>
+
+<h1>
+	Student Delete
+</h1>
+<hr>
+<form action="DeleteStudentServlet" method="get" >
+	ID : <input type="text" name="id"><br>
+	
+	<input type="submit" value="delete">
+</form>
+
+<h1>
+	Student Record
+	<a href="ReadStudentServlet">Records</a>
+</h1>
+<hr>
+
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button{
+	
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Add details</h3>
+
+<div>
+  <form action="AddStudentServlet" method="get">
+    <label for="fname">ID</label>
+    <input type="text" id="fname" name="id" placeholder="Id..">
+
+    <label for="lname">Name</label>
+    <input type="text" id="lname" name="uname" placeholder="Your name..">
+
+   <label for="lname">Marks</label>
+    <input type="text" id="uname" name="marks" placeholder="Your marks..">
+
+  
+    <input type="submit" value="Submit">
+   
+  </form>
+   <a href='ReadStudentServlet'>
+				<button>Student Records</button>
+				</a>
+</div>
+
+</body>
+</html>
